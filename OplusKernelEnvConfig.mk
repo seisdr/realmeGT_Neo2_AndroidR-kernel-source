@@ -169,7 +169,7 @@ endif
 #ifdef OPLUS_FEATURE_POWERINFO_STANDBY
 inner_mk_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 inner_mk_dir := $(shell dirname $(inner_mk_path))
-inner_dir := $(wildcard $(inner_mk_dir)/../vendor/oplus/kernel/*/oplus_wakelock_profiler.h)
+inner_dir := $(wildcard $(inner_mk_dir)/../soc/oplus/*/oplus_wakelock_profiler.h)
 inner_wakelock_dir := $(shell echo $(inner_dir) | awk -F '/' '{ print $$(NF-1) }')
 ifneq ($(inner_wakelock_dir),)
 $(warning "ln the wakelock_profiler_h,mk is $(inner_mk_dir),dir is $(inner_dir), wakelock_dir is $(inner_wakelock_dir)")
