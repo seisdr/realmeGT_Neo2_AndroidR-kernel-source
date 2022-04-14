@@ -3,7 +3,11 @@ root@localhost:~# apt-get install git ccache automake flex lzop bison gperf buil
 ```
 ## Create Same tree as previous build time 
 ```
-mkdir -p ~workspace/source/prebuilts/gcc/linux-x86/aarch64 ~workspace/source/prebuilts/build-tools/linux-x86 ~wokspace/source/kernel/msm-4.19 ~workspace/source/kernel/kernel_out
+mkdir -p ~workspace/source/prebuilts/gcc/linux-x86/aarch64 ~workspace/source/prebuilts/build-tools/linux-x86 ~workspace/source/prebuilts/clang/host/linux-x86/ ~wokspace/source/kernel/msm-4.19 ~workspace/source/kernel/kernel_out
+```
+## Install toolchains and make tools for kernel and extract them to their proper place
+```
+wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android-gs-raviole-5.10-android12-d1/clang-r383902.tar.gz // TO 
 ```
 ## BUILD SCRIPT
 ```
