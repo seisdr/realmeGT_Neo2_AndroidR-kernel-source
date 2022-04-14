@@ -6,9 +6,11 @@ root@localhost:~# apt-get install git ccache automake flex lzop bison gperf buil
 mkdir -p ~workspace/source/prebuilts/gcc/linux-x86/aarch64 ~workspace/source/prebuilts/build-tools/linux-x86 ~workspace/source/prebuilts/clang/host/linux-x86/ ~wokspace/source/kernel/msm-4.19 ~workspace/source/kernel/kernel_out
 ```
 ## Install toolchains and make tools for kernel and extract them to their proper place
-``
+```
 wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android-gs-raviole-5.10-android12-d1/clang-r383902.tar.gz // TO ~workspace/source/prebuilts/clang/host/linux-x86/
+
 wget https://android.googlesource.com/platform/prebuilts/build-tools/+archive/refs/heads/master/linux-x86.tar.gz // TO ~workspace/source/prebuilts/build-tools/
+
 wget https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/android-msm-barbet-4.19-android12-qpr1.tar.gz // TO ~workspace/source/prebuilts/gcc/linux-x86/aarch64
 ``
 ## BUILD SCRIPT
