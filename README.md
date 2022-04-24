@@ -3,7 +3,7 @@ root@localhost:~# apt-get install git ccache automake flex lzop bison gperf buil
 ```
 ## Create Same tree as previous build time 
 ```
-mkdir -p workspace/source/prebuilts/gcc/linux-x86/aarch64 workspace/source/prebuilts/build-tools/linux-x86 workspace/source/prebuilts/clang/host/linux-x86/ workspace/source/kernel/msm-4.19 workspace/source/kernel/kernel_out
+mkdir -p workspace/source/prebuilts/gcc/linux-x86/aarch64 workspace/source/prebuilts/build-tools/linux-x86 workspace/source/prebuilts/clang/host/linux-x86/ workspace/source/kernel/msm-4.19 workspace/source/kernel/kernel_out mkdir -p workspace/source/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 ```
 ## Install toolchains and make tools for kernel and extract them to their proper place
 ```
